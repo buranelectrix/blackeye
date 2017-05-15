@@ -3,18 +3,24 @@
 
 
 volatile uint8_t *ports[] = {
-        &PORTG, &PORTG, &PORTG, 
-        &PORTL, &PORTL, &PORTL, &PORTL, &PORTL, &PORTL, &PORTL, &PORTL,
-        &PORTB, &PORTB, &PORTB, &PORTB,
-        &PORTA, &PORTA, &PORTA, &PORTA, &PORTA, &PORTA, &PORTA, &PORTA,
-        &PORTC, &PORTC, &PORTC, &PORTC, &PORTC, &PORTC, &PORTC, &PORTC 
+        &PORTG, &PORTL, &PORTL, &PORTA, 
+        &PORTA, &PORTA, &PORTC, &PORTB, 
+        &PORTB, &PORTL, &PORTL, &PORTL, 
+        &PORTC, &PORTA, &PORTA, &PORTG, 
+        &PORTB, &PORTL, &PORTB, &PORTD, 
+        &PORTL, &PORTA, &PORTA, &PORTL, 
+        &PORTC, &PORTA, &PORTG, &PORTC, 
+        &PORTC, &PORTC, &PORTC 
     };
 const uint8_t pins[] = {
-        PG2, PG1, PG0, 
-        PL7, PL6, PL5, PL4, PL3, PL2, PL1, PL0,
-        PB3, PB2, PB1, PB0,
-        PA7, PA6, PA5, PA4, PA3, PA2, PA1, PA0,
-        PC7, PC6, PC5, PC4, PC3, PC2, PC1, PC0
+        PG1, PL7, PL5, PA3, 
+        PA1, PA7, PC5, PB3, 
+        PB1, PL6, PL2, PL4, 
+        PC6, PA5, PA0, PG2, 
+        PB0, PL1, PB2, PD7, 
+        PL0, PA6, PA2, PL3, 
+        PC7, PA4, PG0, PC0, 
+        PC4, PC2, PC3
      };
 
 void set_column(uint8_t col_num) {
@@ -27,3 +33,4 @@ void set_column(uint8_t col_num) {
 
 
 #endif
+
